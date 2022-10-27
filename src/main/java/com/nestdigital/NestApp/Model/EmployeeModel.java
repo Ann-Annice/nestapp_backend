@@ -18,16 +18,18 @@ public class EmployeeModel {
     private String address;
     private String designation;
     private String dob;
+    private String joining_date;
     private String email;
     private String password;
 
-    public EmployeeModel(int id, String emp_code, String name, String address, String designation, String dob, String email, String password) {
+    public EmployeeModel(int id, String emp_code, String name, String address, String designation, String dob, String joining_date, String email, String password) {
         this.id = id;
         this.emp_code = emp_code;
         this.name = name;
         this.address = address;
         this.designation = designation;
         this.dob = dob;
+        this.joining_date = joining_date;
         this.email = email;
         this.password = password;
     }
@@ -81,6 +83,14 @@ public class EmployeeModel {
 
     public void setDob(String dob) {
         this.dob = dob;
+    }
+
+    public String getJoining_date() {
+        return joining_date;
+    }
+
+    public void setJoining_date(String joining_date) {
+        this.joining_date = joining_date;
     }
 
     public String getEmail() {
